@@ -9,11 +9,13 @@ services:
     working_dir: "/src"
     ports:
       - "3000:3000"
+      - '24678:24678'
     tty: true
+    init: true
+    command: yarn dev -o
     environment:
-    - HOST=0.0.0.0
-    - port=3000
-    - CHOKIDAR_USEPOLLING=true
-
+      - HOST=0.0.0.0
+      - port=3000
+      - CHOKIDAR_USEPOLLING=true
 volumes:
   node_modules:

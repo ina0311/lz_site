@@ -1,0 +1,23 @@
+{
+  "name": "remote container",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/src",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "ecmel.vscode-html-css",
+    "oderwat.indent-rainbow",
+    "xabikos.JavaScriptSnippets",
+    "PKief.material-icon-theme",
+    "guillaumedoutriaux.name-that-color",
+    "leizongmin.node-module-intellisense",
+    "mrmlnc.vscode-scss",
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ],
+  "forwardPorts": [3000,24678],
+}
